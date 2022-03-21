@@ -13,9 +13,10 @@
 		6A3AAEC727C1EBB900D744C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A3AAEC627C1EBB900D744C3 /* Preview Assets.xcassets */; };
 		6A3AAEC927C1EBB900D744C3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3AAEC827C1EBB900D744C3 /* Persistence.swift */; };
 		6A3AAECC27C1EBB900D744C3 /* TaskManagementApps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A3AAECA27C1EBB900D744C3 /* TaskManagementApps.xcdatamodeld */; };
-		6A3AAED327C1EBDC00D744C3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3AAED227C1EBDC00D744C3 /* TaskModel.swift */; };
 		6A3AAED527C1EF6E00D744C3 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3AAED427C1EF6E00D744C3 /* TaskViewModel.swift */; };
 		6A3AAED727C1F13600D744C3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3AAED627C1F13600D744C3 /* Home.swift */; };
+		EA72127F27D70C7E00754689 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72127E27D70C7E00754689 /* DynamicFilteredView.swift */; };
+		EA72128127D7114600754689 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72128027D7114600754689 /* NewTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +27,10 @@
 		6A3AAEC627C1EBB900D744C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6A3AAEC827C1EBB900D744C3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		6A3AAECB27C1EBB900D744C3 /* TaskManagementApps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskManagementApps.xcdatamodel; sourceTree = "<group>"; };
-		6A3AAED227C1EBDC00D744C3 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		6A3AAED427C1EF6E00D744C3 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		6A3AAED627C1F13600D744C3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EA72127E27D70C7E00754689 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
+		EA72128027D7114600754689 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +65,8 @@
 			children = (
 				6A3AAEBF27C1EBB600D744C3 /* TaskManagementAppsApp.swift */,
 				6A3AAEC127C1EBB600D744C3 /* ContentView.swift */,
-				6A3AAED227C1EBDC00D744C3 /* TaskModel.swift */,
-				6A3AAED627C1F13600D744C3 /* Home.swift */,
-				6A3AAED427C1EF6E00D744C3 /* TaskViewModel.swift */,
+				EA72127C27D70B3200754689 /* View */,
+				EA72127D27D70B3A00754689 /* ViewModel */,
 				6A3AAEC327C1EBB900D744C3 /* Assets.xcassets */,
 				6A3AAEC827C1EBB900D744C3 /* Persistence.swift */,
 				6A3AAECA27C1EBB900D744C3 /* TaskManagementApps.xcdatamodeld */,
@@ -80,6 +81,24 @@
 				6A3AAEC627C1EBB900D744C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA72127C27D70B3200754689 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A3AAED627C1F13600D744C3 /* Home.swift */,
+				EA72128027D7114600754689 /* NewTask.swift */,
+				EA72127E27D70C7E00754689 /* DynamicFilteredView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA72127D27D70B3A00754689 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6A3AAED427C1EF6E00D744C3 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +174,8 @@
 				6A3AAEC927C1EBB900D744C3 /* Persistence.swift in Sources */,
 				6A3AAED527C1EF6E00D744C3 /* TaskViewModel.swift in Sources */,
 				6A3AAEC227C1EBB600D744C3 /* ContentView.swift in Sources */,
-				6A3AAED327C1EBDC00D744C3 /* TaskModel.swift in Sources */,
+				EA72128127D7114600754689 /* NewTask.swift in Sources */,
+				EA72127F27D70C7E00754689 /* DynamicFilteredView.swift in Sources */,
 				6A3AAEC027C1EBB600D744C3 /* TaskManagementAppsApp.swift in Sources */,
 				6A3AAECC27C1EBB900D744C3 /* TaskManagementApps.xcdatamodeld in Sources */,
 				6A3AAED727C1F13600D744C3 /* Home.swift in Sources */,
