@@ -5,8 +5,8 @@ import CoreData
 
 struct DynamicFilteredView<Content: View, T>: View where T: NSManagedObject {
     @FetchRequest var request: FetchedResults<T>
-    let content: (T)->Content
-    init(dateToFilter: Date, @ViewBuilder content: @escaping (T)->Content) {
+    let content: (T)-> Content
+    init(dateToFilter: Date, @ViewBuilder content: @escaping (T) -> Content) {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: dateToFilter)
         let tomorrow = calendar.date(byAdding: .day, value: 1, to: today)!
@@ -32,9 +32,3 @@ struct DynamicFilteredView<Content: View, T>: View where T: NSManagedObject {
         }
     }
 }
-
-//struct DynamicFilteredView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DynamicFilteredView()
-//    }
-//}
